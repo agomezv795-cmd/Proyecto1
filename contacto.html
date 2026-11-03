@@ -1,15 +1,15 @@
-a<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | Tinta Negra</title>
     <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo" >Mi sitio</a>
+        <a href="index.html" class="logo" >Tinta Negra</a>
         <button class="hamburguesa" id ="btnmenu">
             <span></span>
             <span></span>
@@ -18,8 +18,8 @@ a<!DOCTYPE html>
 
         <nav>
             <ul>
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Estudio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li> 
             </ul>
@@ -27,17 +27,22 @@ a<!DOCTYPE html>
     </header>
 
     <main>
-        <textarea action="Enviar.php" method="post">
+        <h1>Cuéntanos tu idea</h1>
+        <p>Comparte los detalles de tu proyecto para que podamos orientarte.</p>
+        <form action="Enviar.php" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Email</label>
+            <label for="correo">Correo electrónico:</label>
             <input type="email" id="correo" name="correo" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="25" required></textarea>
+            <label for="mensaje">Idea o estilo que tienes en mente:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
 
-            <button type="submit">Enviar</button>
+            <label for="zona">Zona del cuerpo y tamaño aproximado:</label>
+            <input type="text" id="zona" name="zona">
+
+            <button type="submit">Enviar consulta</button>
 
         </form>
     </main>
@@ -45,16 +50,16 @@ a<!DOCTYPE html>
     <footer>
         <div>
             <p>
-                <strong>Mi Sitio</strong>
+                <strong>Tinta Negra</strong>
             </p>
-            <p>Teléfono: 2222-2222 - Correo info@misitio.com</p>
+            <p>Teléfono y correo: agrega aquí los datos del estudio</p>
         </div>
         <ul>
             <li><a href="https://www.facebook.com/" target="_blank" >Facebook</a></li> 
             <li><a href="https://www.instagram.com/" target="_blank" >Instagram</a></li> 
             
         </ul>
-        <p>&copy; 2026 Mi Sitio</p>
+        <p>&copy; 2026 Tinta Negra</p>
     </footer>
 
     
